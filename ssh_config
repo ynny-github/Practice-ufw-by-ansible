@@ -1,0 +1,11 @@
+Host default
+  HostName 192.168.121.34
+  User vagrant
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile /home/docker-mgr/practice/practice-ubuntu-ufw/.vagrant/machines/default/libvirt/private_key
+  IdentitiesOnly yes
+  LogLevel FATAL
+
