@@ -11,7 +11,12 @@
     - name: Allow SSH
       ufw:
         rule: allow
+        interface: eth0
+        direction: in
+        from_ip: 192.168.121.0/24
         to_port: "22"
+        proto: tcp
+        state: enabled
     # ssh 許可する前に拒否すると，弾かれる.
     - name: Deny incoming packets defaultly
       ufw:
